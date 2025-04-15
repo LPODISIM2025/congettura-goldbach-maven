@@ -25,6 +25,7 @@ public class Runner {
 	 *  - deve essereci un -value seguito da un intero 
 	 * @return un Options che soddisfa i criteri sopra elencati
 	 */
+	//TODO Da finire juri
 	private static Options buildOptions() {
 		Options ops = new Options();
 
