@@ -12,7 +12,6 @@ public class RunnerTest {
 
 	@Test
 	public void test1() {
-		assertTrue(true);
 		assertEquals(true, SupportoNumeriLPO.isPrime(5));
 	}
 	@Test

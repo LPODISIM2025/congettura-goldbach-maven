@@ -27,6 +27,13 @@
 			<artifactId>log4j-core</artifactId>
 			<version>${log4j.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.15.2</version> <!-- o versione aggiornata -->
+		</dependency>
+
 	</dependencies>
 	<properties>
 		<maven.compiler.source>21</maven.compiler.source>
@@ -37,25 +44,25 @@
 	<build>
 
 		<plugins>
-<!--			<plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-checkstyle-plugin</artifactId>-->
-<!--                <version>3.2.2</version>-->
-<!--                <configuration>-->
-<!--                    <configLocation>google_checks.xml</configLocation>-->
-<!--                    <encoding>UTF-8</encoding>-->
-<!--                    <consoleOutput>true</consoleOutput>-->
-<!--                    <failsOnError>true</failsOnError>-->
-<!--                </configuration>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <phase>validate</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>check</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
+			<!--			<plugin>-->
+			<!--                <groupId>org.apache.maven.plugins</groupId>-->
+			<!--                <artifactId>maven-checkstyle-plugin</artifactId>-->
+			<!--                <version>3.2.2</version>-->
+			<!--                <configuration>-->
+			<!--                    <configLocation>google_checks.xml</configLocation>-->
+			<!--                    <encoding>UTF-8</encoding>-->
+			<!--                    <consoleOutput>true</consoleOutput>-->
+			<!--                    <failsOnError>true</failsOnError>-->
+			<!--                </configuration>-->
+			<!--                <executions>-->
+			<!--                    <execution>-->
+			<!--                        <phase>validate</phase>-->
+			<!--                        <goals>-->
+			<!--                            <goal>check</goal>-->
+			<!--                        </goals>-->
+			<!--                    </execution>-->
+			<!--                </executions>-->
+			<!--            </plugin>-->
 			<!-- Lanciare una specifica classe"-->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
